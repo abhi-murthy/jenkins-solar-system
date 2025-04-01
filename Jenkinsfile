@@ -1,7 +1,7 @@
 pipeline {
-    agent {
-        any
-        retries 2
+    agent any
+    options {
+        retry(2)
     }
     tools {
         nodejs 'nodejs-23-10-0'
